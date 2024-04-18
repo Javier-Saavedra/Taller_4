@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#board {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 10px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #f9f9f9;
+}
+
+.cell:active {
+    background-color: #f0f0f0;
+}
+
+.cell.x {
+    color: #f00;
+}
+
+.cell.o {
+    color: #00f;
+}

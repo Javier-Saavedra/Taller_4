@@ -1,0 +1,55 @@
+/* Estilos básicos del juego */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hangman-image {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.word-display {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#letter-input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#guess-button,
+#reset-button {
+    padding: 5px 10px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.result-message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: red;
+}
